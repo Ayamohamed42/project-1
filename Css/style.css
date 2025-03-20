@@ -1,0 +1,631 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 3000px;
+    background-color: bisque;
+}
+
+.header{
+        height: 60px;
+        width: 100%;
+        background-color: #4d2818b1;
+        position: fixed;  
+        z-index: 100;
+        opacity:0.8; 
+    }
+    
+ .logo {
+        height: 100%;
+        width: 150px;
+        margin-left: 100px;
+        float: left;
+    
+    }
+
+    .list {
+        font-size: 20px;
+        margin-right: 100px;
+        float: right;
+        text-transform: capitalize;
+       line-height: 60px;
+        
+    
+    }
+    .list li {
+        display: inline-block;
+        margin-left: 15px;
+        height: 100%;
+        width: 90px;
+        text-align: center;
+        color:black;
+    
+    }
+
+.list li a {
+    color: white;
+    padding: 18px 20px;
+    font-size: 20px;
+    font-weight:900;
+    margin-left: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.list li a:hover{
+    border-bottom: 3px solid rgb(70, 11, 11); 
+     background-color:darkolivegreen; 
+    transition: 2s; 
+    color: #ffffff;
+   
+} 
+.list li a:focus{
+    color: red;
+    text-decoration: line-through;
+}
+
+
+.header-2{
+margin-top: 60px;
+/* margin: 4  0  0  0; */
+height: 60px;
+width: 100%;
+background-color: #4d2818b1 ;
+position: fixed;
+opacity: 0;
+transition: 0.5s;
+z-index: 900;
+}
+
+.header-2:hover{
+    opacity: 1;
+
+}
+.header-2 i{
+    /* color: aliceblue; */
+    font-size: 22px;
+    padding: 15px  0;
+    margin-left: 60px;
+    cursor: pointer;
+}
+.header-2 span{
+    color: aliceblue;
+font-size: 20px;
+text-transform: capitalize;
+
+}
+.header-2 input{
+    margin-left: 600px;
+    height: 30px;
+    border-radius: 10px;
+padding: 0  0  0  10;
+}
+
+
+.parent{
+    background: url(../images/istanbul.jpg) center /cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  
+
+}
+.overlay{
+   
+    width: 100%;
+    height: 100%;
+
+position: absolute;
+top: 0;
+left: 0;
+background-color: rgba(0, 0, 0, 0.336);
+
+}
+/* =========================================1================================= */
+.content-1{
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+   
+}
+
+.content-1 span{
+    color: rgb(105, 16, 16);
+    font-size: 50px;
+    transform: capitalize; 
+    
+   
+}
+.content-1 p{
+    color: bisque;
+    font-size: 25px;
+    margin-bottom: 10px;
+    transform: capitalize;
+}
+.title1{
+    color: bisque;
+    transform: capitalize;
+    font-size: 30px;
+
+}
+
+
+.btn{
+    width: 150px;
+  height: 40px;
+  border-radius: 15px;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: bisque;
+  background-color: darkolivegreen;
+  cursor: pointer;
+transition: .5s;
+}
+
+.btn:hover{
+    color: darksalmon;
+    opacity: .9;
+}
+
+
+
+.btn2{
+    color: rgb(54, 12, 12);
+    margin-left: 10px;
+
+}
+
+.AllTitle{
+    margin: 80 0 0 30%;
+    h1{
+        color: rgb(65, 17, 17);
+    }
+    .line{
+        height: 7px;
+        width: 300px;
+        background-color: darkolivegreen;
+        border-radius: 50%;
+        margin:10 0 80 90px;
+    }
+}
+
+/* =======================================2====================================== */
+.thebest {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color:rgb(78, 15, 15);
+}
+.thebest,.parent-thebest {
+    padding: 60px;
+    background-color: rgb(78, 15, 15);
+    overflow: auto;
+}
+.thebest .parent-thebest .card{
+    width: 30%;
+    height: 150px;
+    background-image:url(../images/1.jpg);
+    background-size: cover;
+    position: relative;
+    float: left;
+    margin-bottom: 30px;
+    border-top: 3px solid #073b09;
+}
+
+.thebest .parent-thebest .card-2{
+    background-image: url(../images/2.jpg);
+}
+.thebest .parent-thebest .card-3{
+    background-image: url(../images/3.jpg);
+    background-size: cover;
+    width: 30%;
+    height: 150PX;
+}
+.thebest .parent-thebest .card-4{
+    background-image: url(../images/4.jpg);
+    background-size: cover;
+    width: 30%;
+    height: 150PX;
+}
+.thebest .parent-thebest .card-5 {
+     background-image: url(../images/5.jpg);
+     background-size: cover;
+     width: 30%;
+     height: 150PX;
+
+}
+.thebest .parent-thebest .card-6{
+    background-image: url(../images/6.jpg);
+    background-size: cover;
+    width: 30%;
+    height: 150PX;
+}
+.thebest .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.616);
+    transition: 1.5s;
+    border-bottom: 3px solid #d3d3d3;
+}
+.thebest .card:hover::before{
+    width: 100%;
+    height: 100%;
+    color: bisque;
+}
+.thebest .card .info{
+    z-index: 3;
+    position: relative;
+}
+.thebest .card .info i {
+    padding: 20px 20px 0;
+    font-size: 30px;
+    margin-right: 40px;
+    color:bisque;
+}
+.thebest .parent-thebest .card .text {
+    width: 70%;
+    margin: -30px 80px 0;
+    color: black;
+    transition: 2s;
+}
+.thebest .parent-thebest .card .text h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.thebest .parent-thebest .card:hover .text h4{
+    color:beige;
+}
+/* .thebest .parent-s .card .text p {
+
+    font-weight: bold;
+    word-spacing: 2px;
+    color: white;
+    transition: 2s;
+    line-height: 1.6;
+} */
+/* .thebest .parent-thebest .card .text p del{
+    color: #073b09;
+} */
+.thebest .parent-thebest .center {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* ================================3==================================== */
+.parent-3{
+    height: 500px;
+    background-color: rgb(78, 15, 15);
+    margin-top: 100px;
+    padding-top: 30px;
+    display: flex;
+    .child{
+        width: 300px;
+        height: 400px;
+        background-image: url(../images/3.gpj.jpg);
+        background-size: cover;
+        margin-left: 110px;
+        .content-3{
+            text-align: center;
+            padding: 5px;
+            opacity: 0;
+            transition: .5s;
+            h2{
+                margin-top: 20px;
+                font-size: 30PX;
+                color: rgb(78, 15, 15) ;
+            }
+
+             p{
+             margin-top: 15px;
+             color: #000000;
+             font-size: 25px;
+             transform: CAPITALIZE;
+             }
+             
+             button{
+                margin-top: 50px;
+                background-color: rgb(78, 15, 15) ;
+                color: #fff;
+                width: 85px;
+                height: 40px;
+                border-radius: 10px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+         
+        }
+        .content-3:hover{
+            opacity: 1;
+         }
+    }
+}
+/* ========================================4============================================= */
+
+.features {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 100vh;
+}
+.requirements{
+    margin-top: 50px;
+}
+.requirements .parent-requirements{
+    padding: 60px;
+    background-color: #360b05;
+    overflow: auto;
+    width: 100%;
+}
+.requirements .parent-requirements .box {
+    width: 500px;
+    height: 200px;
+    float: left;
+    margin-top: 40px ;
+    margin-right: 350px;
+}
+.requirements .parent-requirements .box h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+    color: darkolivegreen;
+}
+.requirements .parent-requirements .box hr {
+    width: 170px;
+    height: 6px;
+    background-color:bisque;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.requirements .parent-requirements .box > p {
+    font-size: 18px;
+    font-weight: bold;
+    color: bisque;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.requirements .parent-requirements .box p span {
+    color:darkolivegreen;
+}
+.requirements .parent-requirements .box .text {
+    margin-top: 30px;
+}
+.requirements .parent-requirements .box .text p {
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: beige;
+    font-size: 20px;
+}
+.requirements .parent-requirements .box .text p i {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: darkolivegreen;
+    margin-right: 10px;
+    padding: 3px;
+    color: #360808;
+    font-size: 10px;
+}
+.requirements .parent-requirements .image-box img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 7px solid;
+    border-color: bisque ;
+    outline: 8px solid darkolivegreen;
+}
+.requirements .parent-requirements .image-box ul {
+    margin-left: 150px;
+    margin-top: 15px;
+}
+.requirements .parent-requirements .image-box ul li:hover, .features .parent-requirements .image-box ul .active {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+/* ==============================================5========================================================= */
+
+
+.avaulable{
+    width: 80%;
+    margin:200px auto;
+}
+.parent-avaulable{
+    width: 100%;
+    height: 50vh;
+}
+
+.avaulable-item{
+    float: left;
+    width: 30%;
+    background-color: rgb(78, 15, 15);
+    padding: 14px 14px;
+    text-align: center;
+    position: relative;
+}
+.items22{
+    margin: 0 5%;
+   
+}
+.avaulable-img{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    z-index: 44;
+}
+.avaulable-img img{
+    width: 95%;
+    
+}
+.avaulable-lay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .7);
+    visibility: hidden;
+    opacity: 0;
+    transition: 2s;
+}
+.avaulable-item:hover .avaulable-lay{
+      visibility: visible;
+      opacity: 1;
+}
+.avaulable-lay a{
+    display:block;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    background:darkolivegreen;
+    color: bisque;
+    margin-left: auto; 
+    border-radius: 50%;
+    margin-top: 7px;
+}
+.avaulable-lay a i{
+    line-height: 40px;
+}
+.avaulable-info{
+    color: bisque;
+    padding: 5px;
+    z-index: 999;
+}
+.avaulable-info h2{
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+.avaulable-info .btn-3{
+    margin-top: 15px;
+    width: 110px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: bisque;
+    color: #360808;
+}
+
+.avaulable-item::after{
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);
+    transition: 1s;
+}
+.avaulable-item:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.avaulable-item::before{
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+
+    bottom: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.5);
+    transition: 1s;
+}
+.avaulable-item:hover::before{
+    width: 100%;
+    height: 100%;
+}
+
+/* =====================================6======================================== */
+.ratings {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 100vh;
+}
+.ratings .parent-rating {
+    background: url(../images/6.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 450px;
+}
+.div-circel {
+    text-align: center;
+    margin: 25px 0 0 810px;
+   
+}
+.div-circel div {
+    background-color: bisque;
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 6px;
+}
+.div-circel .circel-1{
+    background-color: darkolivegreen;
+}
+.ratings .parent-rating .overla {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 16, 16, 0.377);
+    color: #fff;
+}
+.ratings .parent-rating .container .cart {
+    width: 20%;
+    float: left;
+    margin-left: 4%;
+    text-align: center;
+    margin-top: 150px;
+    overflow: hidden;
+}
+.ratings .parent-rating .container .cart .ii {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: darkolivegreen;
+    transition: .5s;
+}
+.ratings .parent-rating .container .cart h5 {
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+.ratings .parent-rating .container .cart p {
+    margin-top: 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #dcdcdc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
